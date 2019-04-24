@@ -1,6 +1,6 @@
 FROM golang:alpine AS build
 
-RUN apk add --update git make build-base npm && \
+RUN apk add --update bash git make build-base npm && \
     rm -rf /var/cache/apk/*
 
 WORKDIR /src/AdGuardHome
@@ -21,4 +21,4 @@ EXPOSE 53/tcp 53/udp 67/tcp 67/udp 68/tcp 68/udp 80/tcp 443/tcp 853/tcp 853/udp 
 VOLUME ["/opt/adguardhome/conf", "/opt/adguardhome/work"]
 
 ENTRYPOINT ["/opt/adguardhome/AdGuardHome"]
-CMD ["-c", "/opt/adguardhome/conf/AdGuardHome.yaml", "-w", "/opt/adguardhome/work"]
+CMD ["-h", "0.0.0.0", "-c", "/opt/adguardhome/conf/AdGuardHome.yaml", "-w", "/opt/adguardhome/work"]
