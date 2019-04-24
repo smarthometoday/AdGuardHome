@@ -55,6 +55,9 @@ It operates as a DNS server that re-routes tracking domains to a "black hole," t
 Please read the [Getting Started](https://github.com/AdguardTeam/AdGuardHome/wiki/Getting-Started) article on our Wiki to learn how to install AdGuard Home, and how to configure your devices to use it.
 
 Alternatively, you can use our [official Docker image](https://hub.docker.com/r/adguard/adguardhome). 
+# 一键部署到 heroku  
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ### Guides
 
