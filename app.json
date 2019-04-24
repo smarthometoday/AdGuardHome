@@ -1,0 +1,15 @@
+{
+
+  "name": "adguradhome",
+
+  "description": "Deploy adguardhome to Heroku.",
+
+  "keywords": ["adguardhome"],
+
+  "website": "https://github.com/warther/AdGuardHome",
+
+  "repository": "https://github.com/warther/AdGuardHome",
+
+  "stack": "container"
+
+ }
